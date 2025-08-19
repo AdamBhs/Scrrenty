@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Adem-Ben-Hassine-s-workspace-6oveui.eu-west-1.xata.sh/db/scrrenty",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
