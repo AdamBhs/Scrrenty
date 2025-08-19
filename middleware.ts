@@ -1,15 +1,14 @@
 import { auth } from "@/lib/auth";
-import { headers } from "next/headers";
+import { cookies, headers } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
 import aj from "./lib/arcjet";
 import { createMiddleware, detectBot, shield } from "@arcjet/next";
 
 export async function middleware(request: NextRequest, response: NextResponse) {
-  const session = await auth.api.getSession({
-    headers: await headers(),
-  });
+  const cookieStore = await cookies();
+  const sessionToken = cookieStore.get("better-auth.session_token");
 
-  if (!session) {
+  if (!sessionToken) {
     return NextResponse.redirect(new URL("/sign-in", request.url));
   }
 
