@@ -120,13 +120,13 @@ export const saveVideoDetails = withErrorHandling(
         },
       }
     );
-
+    const now = new Date();
     await db.insert(videos).values({
       ...videoDetails,
       videoUrl: `${BUNNY.EMBED_URL}/${BUNNY_LIBRARY_ID}/${videoDetails.videoId}`,
       userId,
-      createdAt: new Date(),
-      updatedAt: new Date(),
+      createdAt: now,
+      updatedAt: now,
     });
 
     revalidatePaths(["/"]);
