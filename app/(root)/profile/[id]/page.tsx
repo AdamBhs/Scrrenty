@@ -1,7 +1,6 @@
 import EmptyState from "@/app/components/EmptyState";
 import Header from "@/app/components/Header";
 import VideoCard from "@/app/components/VideoCard";
-import { dummyCards } from "@/constants";
 import { getAllVideosByUser } from "@/lib/actions/video";
 import { authClient } from "@/lib/auth-client";
 import { redirect } from "next/navigation";

@@ -1,3 +1,4 @@
+"use client";
 import { db } from "@/drizzle/db";
 import { betterAuth } from "better-auth";
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
