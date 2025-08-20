@@ -19,7 +19,7 @@ const page = () => {
             width={32}
             height={32}
           />
-          <h1>SnapCast</h1>
+          <h1>Scrrenty</h1>
         </Link>
         <div className="description">
           <section>
@@ -35,12 +35,12 @@ const page = () => {
               ))}
             </figure>
             <p>
-              SnapCast makes screen recording easy. From quick walkthroughs to
+              Scrrenty makes screen recording easy. From quick walkthroughs to
               full presentations, it's fast, smooth, and shareable in seconds
             </p>
             <article>
               <Image
-                src="/assets/images/jason.png"
+                src="/assets/images/adem.jpg"
                 alt="jason"
                 width={65}
                 height={65}
@@ -48,12 +48,12 @@ const page = () => {
               />
               <div>
                 <h2>Adem Ben Hassine</h2>
-                <p>Product Designer, NovaByte</p>
+                <p>Software Developer</p>
               </div>
             </article>
           </section>
         </div>
-        <p> SnapCast {new Date().getFullYear()}</p>
+        <p> Scrrenty {new Date().getFullYear()}</p>
       </aside>
       <aside className="google-sign-in">
         <section>
@@ -64,10 +64,10 @@ const page = () => {
               width={40}
               height={40}
             />
-            <h1>SnapCast</h1>
+            <h1>Scrrenty</h1>
           </Link>
           <p>
-            Create and share your very first <span>SnapCast video</span> in no
+            Create and share your very first <span>Scrrenty video</span> in no
             time!
           </p>
           <button onClick={handleSignIn}>
