@@ -6,7 +6,7 @@ import { createMiddleware, detectBot, shield } from "@arcjet/next";
 
 export async function middleware(request: NextRequest, response: NextResponse) {
   const cookieStore = await cookies();
-  const sessionToken = cookieStore.get("better-auth.session_token");
+  const sessionToken = cookieStore.get("__Secure-better-auth.session_token");
 
   if (!sessionToken) {
     return NextResponse.redirect(new URL("/sign-in", request.url));
